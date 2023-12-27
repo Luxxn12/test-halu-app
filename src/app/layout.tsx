@@ -1,11 +1,15 @@
-import '@mantine/core/styles.css';
+import "@mantine/core/styles.css";
 
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import { ColorSchemeScript, MantineProvider } from "@mantine/core";
+import { Plus_Jakarta_Sans } from "next/font/google";
+import { Barlow_Condensed } from "next/font/google";
 
 export const metadata = {
-  title: 'Test Halu App',
-  description: 'Test Halu App',
+  title: "Test Halu App",
+  description: "Test Halu App",
 };
+
+
 
 export default function RootLayout({
   children,
@@ -18,7 +22,9 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider>
+          {children}
+          </MantineProvider>
       </body>
     </html>
   );
